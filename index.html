@@ -54,6 +54,7 @@ document.getElementById("default_btn").click();
       <meta property="og:site_name" content="ISPOC">
       <meta property="og:url" content="https://ispoc-series.github.io/">
       <meta property="og:title" content="ISPOC">
+      <meta property="og:image" content="https://ispoc-series.github.io/img/ispoc.png">
       <meta property="og:description" content="ISPOC">
       <meta property="og:locale" content="en-us">
       <meta property="og:updated_time" content="2016-04-20T00:00:00&#43;08:00">
@@ -188,9 +189,71 @@ document.getElementById("default_btn").click();
   overflow: hidden;
   background-color: #f1f1f1;
 }
-</style>                
+</style>          
+      
 <!--  THIS IS FOR BUILDING UP THE ARCHIVE BUTTON STYLE -->
-	<h2>ISPOC 2025 Series</h2>
+	<h2>ISPOC 2026 Series</h2>
+	<table id="speakers2026">
+		<tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Speaker(s)</th>
+                        <th>Profile</th>
+                        <th>Title</th>
+                </tr> 
+		<!-- Add 2026 session rows here, same format as below -->
+       <tr>
+                        <td>April 9, 2026</td>
+                        <td>Fireside Chat</td>
+                        <td><a href="https://chaofanzhai.com/" target="_blank">Chaofan Zhai</a>, <a href="https://www.yizhiliu.info/research" target="_blank">Yizhi Liu</a></td>
+                        <td>University of Minnesota (Ph.D.) :: HKUST (Assistant Professor), University of Maryland (Ph.D.) :: Temple University (Assistant Professor)</td>
+                        <td>IS Job Market Recap and Experience Sharing</td>
+</tr>
+       <tr>
+                        <td>April 23, 2026</td>
+                        <td>Fireside Chat</td>
+                        <td><a href="https://sites.google.com/view/wendaoxue/home?authuser=1" target="_blank">Wendao Xue</a>, <a href="https://dsail.kelley.iu.edu/members/phd/aijia-yuan.html" target="_blank">Aijia Yuan</a></td>
+                        <td>UT Austin (Postdoc) :: CUHK (Assistant Professor), Indiana University (Ph.D.) :: UT Austin (Assistant Professor)</td>
+                        <td>IS Job Market Recap and Experience Sharing</td>
+                </tr>
+       <tr>
+                        <td>June 4, 2026</td>
+                        <td>Fireside Chat</td>
+                        <td><a href="https://search.asu.edu/profile/5047660" target="_blank">Che-Wei Liu</a>, <a href="https://sites.google.com/view/yifan-yu/" target="_blank">Yifan Yu</a></td>
+                        <td>Arizona State University (Associate Professor), University of Hong Kong (Associate Professor)</td>
+                        <td>From Campus to Company: Building Meaningful Industry Collaborations</td>
+                </tr>
+       <tr>
+                        <td>July 9, 2026</td>
+                        <td>Exemplar Job Talk</td>
+                        <td><a href="https://brianjabarian.org/" target="_blank">Brian Jabarian</a></td>
+                        <td>Paris School of Economics (Ph.D.) & Sorbonne (Ph.D.) :: CMU Heinz (Assistant Professor)</td>
+                        <td>Voice AI in Firms: A Natural Field Experiment on Automated Job Interviews</td>
+                </tr>
+       <tr>
+                        <td>July 16, 2026</td>
+                        <td>Exemplar Job Talk</td>
+                        <td><a href="https://www.jgaeb.com/" target="_blank">Johann D. Gaebler</a></td>
+                        <td>Harvard (Ph.D.) :: NYU Stern (Assistant Professor)</td>
+                        <td>A Simple, Statistically Robust Test of Discrimination</td>
+                </tr>
+       <tr>
+                        <td>August 6, 2026</td>
+                        <td>Exemplar Job Talk</td>
+                        <td><a href="https://rubingli123.github.io/" target="_blank">Rubing Li</a></td>
+                        <td>NYU Stern (Ph.D.) :: UT Austin McCombs (Assistant Professor)</td>
+                        <td>Platform Design, Earnings Transparency and Minimum Wage Policies: Evidence from A Natural Experiment on Lyft</td>
+                </tr>
+       <tr>
+                        <td>August 20, 2026</td>
+                        <td>Job Market Presentation</td>
+                        <td><a href="https://xueyunluo.github.io/" target="_blank">Xueyun Luo</a></td>
+                        <td>Cornell</td>
+                        <td>Supplier scale, competition, and consumer experience in platforms</td>
+                </tr>
+	</table>
+	<button type="button" class="collapsible"><h2 style="color:white;">ISPOC 2025 Archive</h2></button>
+	<div class="content">
 	<table id="speakers2025">
 		<tr>
                         <th>Date</th>
@@ -324,6 +387,7 @@ document.getElementById("default_btn").click();
                 </tr>
 		
 	</table>
+   </div>
 	<button type="button" class="collapsible"><h2 style="color:white;">ISPOC 2024 Archive</h2></button>
 		<div class="content">        
         <table id="speakers2024">
@@ -982,6 +1046,7 @@ for (i = 0; i < coll.length; i++) {
                         <div class="btn-toolbar">
                            <div class="btn-group">
 				<a href="#" data-filter="*" class="btn btn-primary btn-large active">All</a>
+            <a href="#" data-filter=".spkr2026" class="btn btn-primary btn-large">2026</a>
 				<a href="#" id="default_btn" data-filter=".spkr2025" class="btn btn-primary btn-large">2025</a>	   
 				<a href="#" id="default_btn" data-filter=".spkr2024" class="btn btn-primary btn-large">2024</a>
 				<a href="#" data-filter=".spkr2023" class="btn btn-primary btn-large">2023</a>
@@ -995,8 +1060,106 @@ for (i = 0; i < coll.length; i++) {
                      </div>
                   </div>
 	<div class="row isotope projects-container js-layout-masonry">
-		
-		
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                        <div class="card">
+                           <img src="/img/2026 img/xueyun.jpg" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                           <div class="card-text">
+                              <h4>Xueyun Luo</h4>
+                              <div class="card-desription">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                        <div class="card">
+                           <img src="/img/2026 img/rubing.png" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                           <div class="card-text">
+                              <h4>Rubing Li</h4>
+                              <div class="card-desription">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                        <div class="card">
+                           <img src="/img/2026 img/hans.jpg" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                           <div class="card-text">
+                              <h4>Johann D. Gaebler</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                          </div>
+                          </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                        <div class="card">
+                           <img src="/img/2026 img/brian.jpg" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                           <div class="card-text">
+                              <h4>Brian Jabarian</h4>
+                              <div class="card-desription">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                         <div class="card">
+                           <img src="/img/2026 img/Che-Wei.png" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                           <div class="card-text">
+                              <h4>Che-Wei Liu</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                         <div class="card">
+                           <img src="/img/2026 img/yifan.png" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                           <div class="card-text">
+                              <h4>Yifan Yu</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>             
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                         <div class="card">
+                          <img src="/img/2026 img/wendao.png" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                          <div class="card-text">
+                              <h4>Wendao Xue</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                 
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                         <div class="card">
+                          <img src="/img/2026 img/aijia.jpeg" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                          <div class="card-text">
+                              <h4>Aijia Yuan</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                          </div>
+                        </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                         <div class="card">
+                          <img src="/img/2026 img/chaofan.png" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                          <div class="card-text">
+                              <h4>Chaofan Zhai</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2026">
+                         <div class="card">
+                          <img src="/img/2026 img/Yizhi.jpg" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
+                          <div class="card-text">
+                              <h4>Yizhi Liu</h4>
+                              <div class="card-desription"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item spkr2025">
                         <div class="card">
                            <img src="/img/2025 img/eric.png" alt="" class="img-responsive" style="width:250px; height:auto; max-width:none;">
